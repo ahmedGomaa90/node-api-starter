@@ -9,7 +9,7 @@
     "debug": "node --inspect-brk=3001 dist/index.js",
     "test": "mocha --reporter spec --compilers ts:ts-node/register",
     "gulp": "gulp",
-    "git":"git add -A -- ."
+    "git":"git add -A -- . && git commit -m '' && git push node-starter master"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
