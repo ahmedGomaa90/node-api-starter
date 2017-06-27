@@ -4,6 +4,13 @@
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index",
+  "scripts": {
+    "start": "node dist/index.js",
+    "debug": "node --inspect-brk=3001 dist/index.js",
+    "test": "mocha --reporter spec --compilers ts:ts-node/register",
+    "gulp": "gulp",
+    "git":"git add -A -- ."
+  },
   "dependencies": {
     "body-parser": "^1.17.2",
     "debug": "^2.6.8",
@@ -29,11 +36,6 @@
     "nodemon": "^1.11.0",
     "ts-node": "^3.0.4",
     "typescript": "^2.3.3"
-  },
-  "scripts": {
-    "start": "node dist/index.js",
-    "test": "mocha --reporter spec --compilers ts:ts-node/register",
-    "debug": "node --inspect-brk=3001 dist/index.js"
   },
   "repository": {
     "type": "git",
