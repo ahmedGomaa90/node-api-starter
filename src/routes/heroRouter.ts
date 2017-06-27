@@ -25,15 +25,8 @@ export class HeroRouter {
             name: "ahmed",
             address: "lolo"
         }).save().then(result => {
-            //getDb().models.student.find((err, result) => {
-
-            console.log('from router', result);
-            res.setHeader('app', 'ahmed');
-            //closeConnection().then(() => {
+          
             res.send(result); 
-            //});
-
-            // });
         })
 
     }
