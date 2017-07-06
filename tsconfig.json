@@ -5,9 +5,14 @@
     "declaration": true,
     "sourceMap": true,
     // "outDir": "dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "strict": true,
     "typeRoots": [
       "node_modules/@types"
+    ],
+    "lib": [
+      "es2015"
     ]
   },
   "include": [

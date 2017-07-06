@@ -1,0 +1,1 @@
+export { IUserManager } from './user-manager-contract';
